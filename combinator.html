@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector</title>
+    <style>
+        /*body{
+        color: aqua;
+
+        }  */
+          /* .box{color: brown;
+          }*/
+          /* div p{
+          color:#999;
+          }*/
+          div~ p{
+            color: blue;
+          }
+          a:hover{
+            color: rgb(255, 145, 0);
+            font-size: larger;
+            
+          }
+          a:active{
+            color: rgb(214, 9, 9);
+            font-size: x-large;
+          }
+          ul {
+            list-style: none; display: flex;
+          }
+          ul li {
+            margin: 20px ; border-right:1px solid #db1212 ;
+            padding-right: 20px;
+          }
+          ul li :hover{
+            color: darkgoldenrod;
+          }
+         ul li :nth-child(5){
+            border-right: 0px;
+          }
+          .para{color: black;}
+          .para::first-letter{
+            color: brown;
+          }
+          .para::first-line{
+            color: aqua;
+          }
+          .para::after{
+            content: "read more";
+            color: blueviolet;
+            font-size: 20px;
+          }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, similique velit illum nam excepturi optio iusto sapiente repellendus accusantium saepe omnis suscipit. Assumenda ab iure temporibus, laboriosam veniam voluptatem quisquam.
+        </p>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sapiente quod nisi amet, nihil autem repellat alias, ratione culpa dolor, unde iusto accusamus dolores blanditiis. Temporibus eius aut voluptatem enim.
+            </p>
+        </div>
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, incidunt voluptates blanditiis pariatur quibusdam, facilis, alias perspiciatis ratione nobis natus provident odit perferendis reiciendis laborum aperiam quos? In, exercitationem nam?
+    </p>
+    <a href="">visit link !!!</a>
+    <ul type="none">
+        <li>home</li>
+        <li>service</li>
+        <li>about</li>
+        <li>gelley</li>
+        <li>connect</li>
+    </ul>
+    <!--CSS PSUDO ELELENT-->
+    <P class="para">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita blanditiis quasi iste quo magnam cupiditate cumque ex ea. At iure, amet facere rerum natus delectus eveniet unde possimus deserunt itaque.
+    </P>
+</body>
+</html>
